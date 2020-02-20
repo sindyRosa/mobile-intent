@@ -27,4 +27,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void handleBundle(View view) {
+
+    }
 }
