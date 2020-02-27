@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+    private EditText nameInput;
+    private TextView outputText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handleBundle(View view) {
+        Intent intent = new Intent(this, BundleActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
+    public void handleParcelable(View view) {
+        Intent intent = new Intent(this, BundleActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void handleExit(View view) {
+        Intent intent = new Intent(this, BundleActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

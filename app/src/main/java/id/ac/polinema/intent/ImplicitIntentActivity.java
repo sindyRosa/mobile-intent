@@ -32,7 +32,6 @@ public class ImplicitIntentActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         if (resultCode == RESULT_CANCELED) {
             return;
         }
@@ -50,8 +49,8 @@ public class ImplicitIntentActivity extends AppCompatActivity {
             }
         }
     }
-
     public void handledChangeAvatar(View view) {
+
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(intent, GALLERY_REQUEST_CODE);
     }
